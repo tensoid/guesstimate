@@ -1,0 +1,17 @@
+header {
+  background-color: var(--black);
+  height: 40%;
+}
+
+span {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 3rem;
+  color: rgb(224, 224, 224);
+}
+
+span.green {
+  color: rgb(133, 253, 133);
+}

@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+html, body { 
+  height: 100%; 
+  margin: 0;
+  font-family: 'Courier New', monospace !important;
+  background-color: var(--black);
+  overflow: hidden;
+}
+
+:root {
+  --blue: #7765E3;
+  --silver: #c8c8c8ff;
+  --gray: #b3b3b3ff;
+  --orange: #dc965aff;
+  --black: #242325ff;
+}

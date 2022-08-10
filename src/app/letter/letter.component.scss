@@ -1,0 +1,24 @@
+@use "../../styles";
+
+div {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 600;
+  margin-right: 5px;
+  font-size: 30px;
+  background-color: white;
+}
+
+div.unguessed {
+  background-color: white;
+}
+
+div.correct {
+  background-color: #97ff97;
+}
+
+div.wrong {
+  background-color: #ff7676;
+}
