@@ -1,6 +1,7 @@
 <div class="word-wrapper">
   <app-letter 
-    *ngFor="let letter of word"
-    [letter]="letter">
+    *ngFor="let letter of word; let i = index"
+    [letter]="letter"
+    [hasCursor]="cursorPosition == i">
   </app-letter>
 </div>

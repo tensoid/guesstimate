@@ -22,3 +22,24 @@ div.correct {
 div.wrong {
   background-color: #ff7676;
 }
+
+.cursor-blink::after {
+  content: "";
+  width: 20px;
+  height: 3px;
+  background: black;
+  display: inline-block;
+  animation: cursor-blink-animation 1.5s infinite;
+}
+
+@keyframes cursor-blink-animation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

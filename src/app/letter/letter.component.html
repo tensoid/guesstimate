@@ -1,1 +1,12 @@
-<div>{{ letter.toUpperCase() }}</div>
+<div 
+  [@letterAnimation]="animationState" 
+  *ngIf="hasCursor" 
+  class="cursor-blink" >
+  {{ letter.toUpperCase() }}
+</div>
+
+<div 
+  [@letterAnimation]="animationState"
+  *ngIf="!hasCursor">
+  {{ letter.toUpperCase() }}
+</div>
