@@ -190,7 +190,7 @@ export class GuesstimateComponent implements OnInit {
     const currentWord = this.currentSentence[this.currentWordIndex];
     const currentHiddenLetterIndexes = this.hiddenLetterIndexes[this.currentWordIndex];
     for(let i = 0; i < this.hiddenLettersCount; i++) {
-      if(currentWord[currentHiddenLetterIndexes[i]] !== this.guessedLettersCurrentWord[i]) {
+      if(currentWord[currentHiddenLetterIndexes[i]].toLowerCase() !== this.guessedLettersCurrentWord[i]) {
         return false;
       }
     }
