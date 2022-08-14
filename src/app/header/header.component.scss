@@ -1,6 +1,8 @@
 header {
   background-color: var(--black);
-  height: 40%;
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
 }
 
 span {

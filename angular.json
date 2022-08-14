@@ -73,7 +73,7 @@
               "browserTarget": "guesstimate:build:production"
             },
             "development": {
-              "browserTarget": "guesstimate:build:development"
+              "browserTarget": "guesstimate:build:development"            
             }
           },
           "defaultConfiguration": "development"

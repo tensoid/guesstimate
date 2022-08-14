@@ -1,12 +1,44 @@
-<div 
+<div
   [@letterAnimation]="animationState" 
   *ngIf="hasCursor" 
-  class="cursor-blink" >
+  class="letter cursor-blink">
+  {{ letter.toUpperCase() }}
+</div>
+
+<!--
+
+  NO BOXES EXCEPT FOR THE CURSOR
+
+<div 
+  [@letterAnimation]="animationState"
+  *ngIf="!hasCursor && letter == ''"
+  class="letter non-letter">
   {{ letter.toUpperCase() }}
 </div>
 
 <div 
   [@letterAnimation]="animationState"
-  *ngIf="!hasCursor">
+  *ngIf="!hasCursor && letter != ''"
+  class="letter non-letter">
+  {{ letter.toUpperCase() }}
+</div>
+
+-->
+
+<!--
+  WITH BOXES
+-->
+
+<div 
+  [@letterAnimation]="animationState"
+  *ngIf="!hasCursor && (letter.toLowerCase().match('[a-z]') || letter == '')"
+  class="letter">
+  {{ letter.toUpperCase() }}
+</div>
+
+<div 
+  [@letterAnimation]="animationState"
+  *ngIf="!hasCursor && (!letter.toLowerCase().match('[a-z]') && letter != '')"
+  class="letter non-letter">
   {{ letter.toUpperCase() }}
 </div>

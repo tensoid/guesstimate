@@ -1,7 +1,13 @@
-<div class="sentence-wrapper">
-  <app-word 
-    *ngFor="let word of shownWords; let i = index"
-    [cursorPosition]="(cursorPosition.wordIndex == i ? cursorPosition.letterIndex : -1)"
-    [word]="word">
-  </app-word>
+<div class="guesstimate-game-wrapper">
+
+  <div class="sentence-wrapper">
+    <app-word 
+      *ngFor="let word of shownWords; let i = index"
+      [cursorPosition]="(cursorPosition.wordIndex == i ? cursorPosition.letterIndex : -1)"
+      [word]="word">
+    </app-word>
+  </div>
+  
+  <span *ngIf="qouteAuthor != ''">~ {{qouteAuthor}}</span>
+
 </div>

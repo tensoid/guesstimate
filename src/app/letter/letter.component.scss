@@ -32,6 +32,11 @@ div.wrong {
   animation: cursor-blink-animation 1.5s infinite;
 }
 
+.non-letter {
+  background-color: var(--black);
+  color: white;
+}
+
 @keyframes cursor-blink-animation {
   0% {
     opacity: 0;
